@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let xyz = 'Anil'; //goable data
+
+        let f1 = function() { //this is the outer function 
+            let a = 10;
+            let b = 20; //this is the lexico 
+
+            let f2 = function() { //this is the inner function 
+                let age = 22;
+                console.log('i m f2');
+                console.log(a, b, xyz, window.xyz);
+
+            }
+            console.dir(f2);
+        }
+        console.dir(f1);
+        f1();
+    </script>
+</body>
+
+</html>

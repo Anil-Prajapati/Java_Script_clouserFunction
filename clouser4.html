@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = 'Anil Kumar Prajapati';
+
+        function f1() {
+            let a = 10;
+
+            function f2() {
+                let b = 20;
+
+                function f3() {
+                    function f4() {
+                        let name = "Rimmy";
+                        console.log(a, b, name);
+
+                    }
+                    f4();
+                    console.dir(f4);
+                }
+                f3()
+                console.dir(f3);
+            }
+            f2();
+            console.dir(f2);
+        }
+        f1();
+        console.log(a)
+        console.dir(f1);
+    </script>
+</body>
+
+</html>

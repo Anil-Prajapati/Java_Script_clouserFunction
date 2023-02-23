@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(a, b) {
+            console.log('this is the sum fucntion')
+            console.log(a + b);
+
+        }
+        sum(10, 20);
+
+        //this is the curring
+        function add(a) {
+            return function(b) {
+                console.log('this is the sub fucntion')
+                console.log(a + b);
+            };
+        }
+        add(50)(60);
+
+        function mul(m) {
+            return function(d) {
+                console.log('this is the mul fucntion')
+                console.log(m * d);
+            }
+        }
+        mul(5)(6);
+    </script>
+</head>
+
+<body>
+    <h1 style="color: cyan;">this is the my first curring programing </h1>
+    <h2 style="color:  red;">i m very deep love with you in Rimmy </h2>
+</body>
+
+</html>

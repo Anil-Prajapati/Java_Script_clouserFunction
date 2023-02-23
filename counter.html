@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Addmarket() {
+            var counter = 0;
+
+
+            ++counter;
+            document.getElementById("addsay").innerHTML = counter;
+
+        }
+
+        let hellay = () => {
+            ++counter;
+            document.getElementById("addsay").innerHTML = counter;
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="Addmarket()">clicke me</button>
+    <button onclick="hellay()">clicke me</button>
+    <h1>this is the counter<span id="addsay"> 0 </span>time !</h1>
+</body>
+
+</html>
